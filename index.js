@@ -18,7 +18,7 @@ const productosRouter = require('./src/routes/productosRouter');
 app.use("/productos", productosRouter); //prefijo
 
 const productosApiRouter = require('./src/routes/api/productosApiRouter');
-app.use(("/api", productosApiRouter)); //prefijo
+app.use(("/api/productos", productosApiRouter)); //prefijo
 
 app.listen(PORT, ()=> {
     console.log(`aplicación ejecutada en http://localhost:${PORT}`);
