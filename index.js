@@ -14,10 +14,10 @@ app.use(express.json());
 const mainRouter = require('./src/routes/mainRouter');
 app.use("/", mainRouter); //prefijo
 
-const productosRouter = require('./src/routes/productosRouter.js');
+const productosRouter = require('./src/routes/productosRouter');
 app.use("/productos", productosRouter); //prefijo
 
-const productosApiRouter = require('./src/routes/api/productosApiRouter.js');
+const productosApiRouter = require('./src/routes/api/productosApiRouter');
 app.use(("/api", productosApiRouter)); //prefijo
 
 app.listen(PORT, ()=> {
